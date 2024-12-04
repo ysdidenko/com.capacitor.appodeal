@@ -1,10 +1,8 @@
 import { registerPlugin } from '@capacitor/core';
 
-import type { AppodealPluginPlugin } from './definitions';
+import type { AppodealPlugin } from './definitions';
 
-const AppodealPlugin = registerPlugin<AppodealPluginPlugin>('AppodealPlugin', {
-  web: () => import('./web').then((m) => new m.AppodealPluginWeb()),
-});
+const Appodeal = registerPlugin<AppodealPlugin>('AppodealPlugin');
 
 export * from './definitions';
-export { AppodealPlugin };
+export { Appodeal };

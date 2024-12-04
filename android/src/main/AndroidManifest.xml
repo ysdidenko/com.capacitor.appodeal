@@ -1,2 +1,19 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"
+    tools:node="remove" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"
+    tools:node="remove" />
+
+    <application>
+        <!-- Add your meta-data entries here -->
+        <meta-data
+        android:name="com.google.android.gms.ads.APPLICATION_ID"
+        android:value="ca-app-pub-2819511824395417~9873535187"/>
+    <meta-data
+      android:name="com.google.android.gms.games.APP_ID"
+      android:value="686090228635"
+    />
+    </application>
 </manifest>
